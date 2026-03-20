@@ -1,0 +1,154 @@
+body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(247, 250, 252);
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            ;
+        }
+
+        .overall_lab {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .string_manipulation {
+            margin-bottom: 60px;
+        }
+
+        .lab h1 {
+            font-size: 40px;
+            font-weight: 900;
+            color: black;
+            font-style: italic;
+            margin-top: 40px;
+        }
+
+        .lab p {
+            color: gray;
+        }
+
+        .heading {
+            padding-top: 30px;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .circle {
+            color: white;
+            text-align: center;
+            height: 30px;
+            width: 30px;
+            background-color: rgb(59, 130, 245);
+            border-radius: 50%;
+        }
+
+        .text {
+            padding-left: 10px;
+        }
+
+        .card {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            /* grid-template-rows: repeat(4,4fr); */
+            gap: 40px;
+        }
+
+        .card1,
+        .card2,
+        .card3 {
+            height: 250px;
+            width: 430px;
+            background-color: white;
+            padding: 10px 0 20px 30px;
+            border-radius: 30px;
+            border: 1px solid #e2e8f0;
+        }
+
+        input {
+            padding: 6px;
+            width: 89%;
+            border-radius: 9px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .btn1,
+        .btn2,
+        .btn3 {
+            cursor: pointer;
+            background-color: rgb(59, 130, 245);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .btns,
+        .button {
+            padding-top: 10px;
+        }
+
+        .result {
+            font-family: 'Fira Code', monospace;
+            display: flex;
+            align-items: center;
+            margin-top: 13px;
+            margin-top: 15px;
+            background-color: rgb(30, 41, 59);
+            color: rgb(59, 130, 245);
+            min-height: 50px;
+            width: 90%;
+            border-radius: 8px;
+            border-left: 5px solid rgb(59, 130, 245);
+        }
+
+        #resultbox1,
+        #resultbox2,#resultbox4,#resultbox5,#resultbox6,#resultbox7 {
+            padding-left: 9px;
+            padding: 10px;
+        }
+        .que {
+            font-size: 14px;
+            font-family: 'Fira Code', monospace;
+            width: 90%;
+            border-radius: 12px;
+            background-color: rgb(247, 250, 252);
+            height: 30px;
+            padding: 10px;
+        }
+
+        .btns-second {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 0.5rem;
+            margin-right: 15px;
+        }
+
+        .btn-second-1,.btn-third-1,.btn-third-2,.btn-forth-1,.btn-forth-2 {
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .btn-second-1:hover {
+            background-color: #3b82f6;
+            transition: all 0.2s
+        }
+
+        .que-box-third-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .select {
+            border-radius: 9px;
+            font-size: 11px;
+        }

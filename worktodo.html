@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work To Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="overall_lab">
+        <div class="lab">
+
+            <h1>Js built in-lab</h1>
+            <p>Every Core Function demonstrated with unique,practical use case</p>
+
+            <div class="string_manipulation">
+                <div class="heading">
+                    <div class="circle">1</div>
+                    <div class="text">String Manipulation Lab</div>
+                </div>
+                <div class="card">
+                    <div class="card1">
+                        <h3>Data Sanitizer</h3>
+                        <p>Cleans user input for database entry.</p>
+
+                        <input type="text" placeholder="joHN Doe" id="string1" />
+                        <div class="btns">
+                            <button class="btn1" id="touppercase" onclick="toUpperCaseFun()">
+                                toUpperCase()
+                            </button>
+                            <button class="btn1" id="lowercase" onclick="toLowerCaseFun()">
+                                toLowerCase()
+                            </button>
+                            <button class="btn2" id="trim" onclick="trimFun()"
+                                style="background-color: rgb(71, 85, 105);">trim()</button>
+                        </div>
+
+                        <div class="result">
+                            <div id="resultbox1">Result will appear here...</div>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <h3>URL Generator</h3>
+                        <p>Converts title into web-friendly slugs.</p>
+
+                        <input type="text" placeholder="My First Blog Post" id="string2" />
+                        <div class="button">
+                            <button class="btn3" id="replace_split" onclick="replace_split()"
+                                style="width: 89%; background-color: rgb(79, 71, 230);">replace() & split()</button>
+                        </div>
+
+                        <div class="result">
+                            <div id="resultbox2">Result...</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- new  -->
+                <div class="string_manipulation">
+                    <div class="heading">
+                        <div class="circle" style="background-color: rgb(5, 150, 104);">2</div>
+                        <div class="text">Array Processing Lab</div>
+                    </div>
+                    <div class="card">
+                        <div class="card2" style="height: 220px;">
+                            <h3>Task Queue</h3>
+                            <p>Manage a list of items dynamically.</p>
+
+                            <div class="que" id="question">
+                                [ "Email" , "Code" ]
+                            </div>
+                            <div class="btns-second">
+                                <button class="btn-second-1" onclick="pushItem()"
+                                    style="background-color: rgb(17, 186, 130);">push() (End)</button>
+
+                                <button class="btn-second-1" onclick="popItem()"
+                                    style="background-color: rgb(245, 64, 94);">pop() (End)</button>
+
+                                <button class="btn-second-1" onclick="unshiftItem()"
+                                    style="background-color: rgb(4, 120, 87);">unshift() (Start)</button>
+
+                                <button class="btn-second-1" onclick="shiftItem()"
+                                    style="background-color: rgb(191, 17, 61);">shift() (Start)</button>
+                            </div>
+                        </div>
+
+                        <div class="card2" style="height: 220px;">
+                            <h3>Price Filter</h3>
+                            <p>Transforms and filters product prices.</p>
+
+                            <div class="button">
+                                <button class="btn-second-1" id="filter_map" onclick="filter_map()"
+                                    style="width: 89%; background-color: rgb(217, 119, 7)">Run filter() & map()</button>
+                            </div>
+
+                            <div class="result">
+                                <div id="resultbox3">Raw: [5, 20, 45, 100, 12]</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- new2  -->
+                    <div class="string_manipulation">
+                        <div class="heading">
+                            <div class="circle" style="background-color: rgb(5, 150, 104);">3</div>
+                            <div class="text">Math & Logic Lab</div>
+                        </div>
+                        <div class="card">
+                            <div class="card3" style="height: 250px;">
+                                <h3>Smart Rounding</h3>
+                                <p>Testing rounding functions on decimals.</p>
+
+                                <div class="que-box-third-row">
+                                    <input type="number" placeholder="4.7" id="rounding_no" style="width: 20%;">
+                                    <select name="rounding_select" id="selection" class="select">
+                                        <option value="round" id="round">round()</option>
+                                        <option value="ceil" id="ceil">ceil()</option>
+                                        <option value="floor" id="floor">floor()</option>
+                                    </select>
+                                    <button class="btn-third-1" onclick="round_up()" style="background-color: #3b82f6;">Calculate</button>
+                                </div>
+                                <div class="result">
+                                    <div id="resultbox4">
+                                        Result: 5
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card3" style="height: 250px;">
+                                <h3>Input Validator</h3>
+                                <p>Using parseInt() and isNaN() to verify data.</p>
+                                <input type="text" placeholder="Type '42px' or 'abc'" id="number_or_string">
+
+                                <button class="btn-third-2" id="filter_map" onclick="inp_validate()"
+                                    style="width: 92%; background-color: rgb(13, 148, 137);margin-top: 7px;">Validate Input</button>
+
+                                <div class="result">
+                                    <div id="resultbox5">Waiting...</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- new3  -->
+                    <div class="string_manipulation">
+                        <div class="heading">
+                            <div class="circle" style="background-color: rgb(245, 64, 94);">4</div>
+                            <div class="text">Date & Object Lab</div>
+                        </div>
+                        <div class="card">
+                            <div class="card3" style="height: 250px;">
+                                <h3>Age Calculator</h3>
+                                <p>Uses new Date() and getFullYear().</p>
+
+                               <input type="number" id="inp_yr" placeholder="Birth Year (e.g 1995)">
+                               <button class="btn-forth-1" onclick="calculateAge()" style="background-color: rgb(245, 64, 94); margin-top: 7px;">Calc Age</button>
+                                <div class="result">
+                                    <div id="resultbox6">
+                                        Age...
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card3" style="height: 250px;">
+                                <h3>JSON Object Packager</h3>
+                                <p>Transforms data objects into JSON strings.</p>
+
+                                <button class="btn-forth-2" id="" onclick="json_stringify()"
+                                    style="width: 28%; background-color: rgb(30, 41, 59);margin-top: 7px; font-size: 11px;">Stringify Demo()</button>
+
+                                <div class="result
+                                ">
+                                    <div id="resultbox7">{}</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
