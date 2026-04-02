@@ -53,16 +53,15 @@ body {
         .card {
             margin-top: 40px;
             display: grid;
-            grid-template-columns: repeat(2, 2fr);
-            /* grid-template-rows: repeat(4,4fr); */
+            grid-template-columns: repeat(2, 1fr);
             gap: 40px;
         }
 
         .card1,
         .card2,
         .card3 {
-            height: 250px;
-            width: 430px;
+            min-height: 290px;
+            width: 100%;
             background-color: white;
             padding: 10px 0 20px 30px;
             border-radius: 30px;
@@ -108,10 +107,15 @@ body {
         }
 
         #resultbox1,
-        #resultbox2,#resultbox4,#resultbox5,#resultbox6,#resultbox7 {
+        #resultbox2,
+        #resultbox4,
+        #resultbox5,
+        #resultbox6,
+        #resultbox7 {
             padding-left: 9px;
             padding: 10px;
         }
+
         .que {
             font-size: 14px;
             font-family: 'Fira Code', monospace;
@@ -124,12 +128,16 @@ body {
 
         .btns-second {
             display: grid;
-            grid-template-columns: repeat(2, 2fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 0.5rem;
             margin-right: 15px;
         }
 
-        .btn-second-1,.btn-third-1,.btn-third-2,.btn-forth-1,.btn-forth-2 {
+        .btn-second-1,
+        .btn-third-1,
+        .btn-third-2,
+        .btn-forth-1,
+        .btn-forth-2 {
             border: none;
             cursor: pointer;
             padding: 0.5rem 1rem;
@@ -151,4 +159,56 @@ body {
         .select {
             border-radius: 9px;
             font-size: 11px;
+        }
+
+        @media (max-width: 600px) {
+
+            .overall_lab {
+                padding: 10px;
+            }
+
+            .lab h1 {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            .lab p {
+                text-align: center;
+                font-size: 14px;
+            }
+
+            .card {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .heading {
+                font-size: 16px;
+            }
+
+            .circle {
+                height: 25px;
+                width: 25px;
+                font-size: 14px;
+            }
+
+            input {
+                width: 95%;
+            }
+
+            .result {
+                width: 95%;
+            }
+
+            .btns-second {
+                grid-template-columns: 1fr;
+            }
+
+            .que-box-third-row {
+                flex-direction: column;
+            }
+
+            .select {
+                width: 100%;
+            }
         }
